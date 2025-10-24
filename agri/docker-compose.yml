@@ -1,0 +1,10 @@
+version: "3.9"
+
+services:
+  frontend:
+    image: nginx:latest
+    container_name: agriculture-3d
+    ports:
+      - "8081:80"
+    volumes:
+      - ./frontend:/usr/share/nginx/html
